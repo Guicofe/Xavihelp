@@ -128,7 +128,12 @@ public class Lab10 {
     System.out.println(classroom.get(x));
   }//end for loop
   System.out.println("All students displayed.");
-  
+
+   HashMap<String, Student> studentHashMap = new HashMap<>();
+   for(Student student : classroom) {
+     studentHashMap.put(student.getWid(), student);
+   }
+
 
 
  } // end main

@@ -26,6 +26,10 @@ public class Student {
     return userName.toLowerCase() + "@ksu.edu";
   }//end getEmail
 
+  public String getWid() {
+    return wid;
+  }
+
   public String toString(){
     return name + "\nWID #" + wid + "\n" + getEmail() + "\nGPA: " + gpa + "\n";
   }//end toString
